@@ -1,0 +1,103 @@
+
+#header{
+    float: top;
+    display: table-row;
+    width: 100%;
+}
+
+
+
+#header img{
+    float: left;
+    display: table-cell;
+    width:150px
+    
+}
+
+#header h1{
+    
+    text-align: center;
+    display: table-cell;
+    width: 80%;
+}
+
+#header a{
+    float: right;
+    text-align: center;
+    display: table-cell;
+    width:100px;
+    color: white;
+    border-radius: 100px;
+    background-color: blue;
+    
+}
+
+
+
+
+
+body{
+	padding: 20px 20px 20px 20px; 
+	background:#FFFFFF url(Images/triangles.jpg) top left repeat;	
+}
+
+#main_content{
+    display: table-row;
+    float: top;
+    
+}
+
+#navbar{
+    position: absolute;
+    float: left;
+    line-style-type: none;
+    display: table-cell;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+}
+
+#navbar ul{
+    list-style-type: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar li{
+    width:200px;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    background-color: blue;
+    margin: 0 auto 5px;
+}
+
+#chat{
+    display: table-cell;
+    float:right;
+    border: solid 1px #000000;
+    text-align: center;
+}
+
+#chat img{
+    text-align: center;
+    margin: 0 auto;
+    width: 20px;
+}
+
+#content{
+    display: table-cell;
+    padding-top: 50px;
+}
+
+#content p{
+    float: right;
+    padding:0px;
+    margin: 0px;
+    
+    width: 80%
+    
+}
+
+
