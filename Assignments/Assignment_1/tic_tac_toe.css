@@ -1,0 +1,19 @@
+td {
+      border: 1px solid black;
+      padding: 15%;
+      overflow: hidden;
+      white-space: nowrap;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+/*Format the border of the cells*/
+td {
+    border: 1px solid black;
+    padding: 15%;
+    overflow: hidden;
+    white-space: nowrap;
+}
