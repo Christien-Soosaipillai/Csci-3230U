@@ -79,14 +79,14 @@ body {
 
 
 
-.paragraph {
+.comment {
 	border: 2px solid #000070;
 	margin: 40px 40px 40px 40px;
 	background-color: #e0f0ff;
 
 }
 
-.paragraph > .title {
+.comment > .title {
 
 	font-size: 120%;
 	color: white;
@@ -97,7 +97,11 @@ body {
 
 }
 
-.paragraph p{
+.comment p{
 	margin: 20px 20px;
+}
+
+.add_comment {
+    border: 2px solid #000070;  
 }
 
