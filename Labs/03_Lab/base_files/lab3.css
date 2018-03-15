@@ -1,0 +1,50 @@
+.header {
+    padding: 20px;
+	height: 100px;
+}
+.header img {
+	display: table-cell;
+	float: left;
+    width: 150px;
+}
+
+.header a {
+	float: right;
+	display: table-cell;
+	width: 100px;
+	padding: 0.5em 1em 0.5em 1em;
+	background: darkBlue;
+	border: 1px solid darkBlue;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+#chat {
+	padding: 0.25em 1em 0.20em 1em;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background: white;
+	border: 1px solid black;
+}
+
+#chat_pop {
+	padding: 2.00em 1em 2.00em 1em;
+	position: fixed;
+	right: 0;
+	bottom: 28px;
+	background: white;
+	border: 1px solid black;
+}
+
+#chat_pop > #chatForm {
+
+	margin-top: 20px;
+}
+
+
+#chat img {
+	width: 20px;
+}

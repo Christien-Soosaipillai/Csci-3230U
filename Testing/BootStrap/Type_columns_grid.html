@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!--This page will automatically resize using the above bootstrap framework-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!--Using the following to adjust any style changes to the bootsrap framework-->
+  <style>
+    
+    mark { 
+      background-color: yellow;
+      color: black;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Types, Columns and Grids (Tutorial #1)</h1> 
+    <p>Welcome to to this mess of a webpage lets experiment now shall we......</p> 
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <h1>Hello World!</h1>
+  <p>Three equal width columns! Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+  <div class="row">
+    <div class="col" style="background-color:lavender;">col</div>
+    <div class="col" style="background-color:orange;">col</div>
+    <div class="col" style="background-color:lavender;">col</div>
+    <div class="col" style="background-color:red;">col</div>
+    <div class="col" style="background-color:green;">col</div>
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+    <!--The bootstrap framework will automatically space out and stack columns if there is not enough space-->
+  </div>
+</div>
+
+<!--
+THe following refers to the different sizes you can use for bootstrap
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+-->
+
+
+<div class="container">
+<!--class tag used to distinguish between the different display title sizes-->
+  <h1>Display Headings</h1>
+  <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+</div>
+
+<br>
+
+<!--using the h1 to h6 tags for each of the following header text sizes-->
+<div class="container">
+  <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+  <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+  <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+  <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+  <h5><abbr title="h5 Bootstrap heading (1.25rem = 20px)">h5 heading with abbr</abbr></h5>
+  <h6>h6 Bootstrap heading (1rem = 16px) <mark>This is highlighted text</mark></h6>
+  <h6>h6 Bootstrap heading plain <small>h6 Bootstrap heading small text tag</small></h6>
+
+
+  <blockquote class="blockquote">
+    <p>The following is a blockquote tag which is used to present content from another source</p>
+    <footer class="blockquote-footer">From WWF's website</footer>
+  </blockquote>
+</div>
+
+
+<div class="container">
+  <h1>Description Lists</h1>    
+  <p>The dl element indicates a description list:</p>
+  <dl>
+    <dt>Homemade double double coffee</dt>
+    <dd>-Nescafe coffee mix</dd>
+    <dd>-Horlicks</dd>
+    <dd>-2 sugar</dd>
+    <dd>-2 milk</dd>
+    <dd>-hot water</dd>
+  </dl>     
+</div>
+
+<div class="container">
+  <h1>The following is an exmaple of a code snippet</h1>
+  
+  <p>The following HTML elements: <code><h1 class="display-4">Display 1</h1>
+  <h1 class="display-4">Display 2</h1></code>
+  </p>
+
+  <br>
+
+  <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+  <p>Use kbd tag<kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+
+  <p>For multiple lines of code, use the pre element:</p>
+  <pre>
+  Text in a pre element
+  preserves both      
+  spaces and
+  line breaks. Here is an example of the following
+  line break         spacing
+  </pre>
+</div>
+
+<div class="container">
+  <h2>Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="text-secondary">Secondary text.</p>
+  <p class="text-dark">This text is dark grey.</p>
+  <p class="text-light">This text is light grey (on white background).</p>
+  <p class="text-white">This text is white (on white background).</p>
+  <a href="#" class="text-muted">link-Muted link.</a>
+  <a href="#" class="text-primary">link-Primary link.</a>
+</div>
+
+<!--https://www.w3schools.com/bootstrap4/bootstrap_colors.asp--       Colour Link>
+
+<!--https://www.w3schools.com/bootstrap4/bootstrap_typography.asp     Typography link-->
+
+
+
+
+
+</body>
+</html>
+
+
