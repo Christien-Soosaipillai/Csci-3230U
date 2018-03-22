@@ -7,6 +7,36 @@
 
 #weather ul{
 	list-style-type: none;
+}
 
+#map-canvas {
+  height: 400px;
+  width: 100%;
+ }
 
+li{
+  list-style-type: none;
+  font-size: 12pt
+}
+
+#weather{
+  margin-top: 20px;
+  border: 1px solid #000070;
+  width: 400px;
+  height: inherit;
+  background-color: lightblue;
+  display: none
+}
+
+td {
+  border-top:1px solid black;
+}
+
+th{
+  border-bottom: 1px solid black;
+}
+
+table{
+  width: 70%;
+  border-top: 1px solid black;
 }
