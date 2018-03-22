@@ -8,8 +8,8 @@ $(document).ready(function(){
       $(this).closest('table').find('td').not(this).removeClass('selected');  
       $(this).toggleClass('selected');
 
-      
-
+     
+ 
    });
 
 
@@ -46,9 +46,31 @@ $(document).ready(function(){
    });
 
 
-   $()
+   var inputField =document.createElement("INPUT");
+   inputField.setAttribute("type", "text");
+   var val;
 
-  
+   $("#table tr td").click(function(){
+
+      val = $(this).html();
+      inputField.setAttribute("value", val);
+      $(this).html(inputField);
+      inputField.focus();
+
+   });
+
+   $("#table tr td").keypress(function(k){
+      if(event.keyCode == 13){
+      val = inputField.value;
+
+      $(this).html(val);
+      inputField.blur();
+
+      
+   }
+   });
+
+
 
 
 
