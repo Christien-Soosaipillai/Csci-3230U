@@ -37,7 +37,7 @@ function downloadWeather(){
 
     $('#weather ul').append('<li>Description: ' + data.current.condition.text + '&deg;C</li>');                   //description
     $('#weather ul').append('<li>Cloud cover: ' + data.current.cloud + '%</li>');                                 //cloud cover
-    $('#weather ul').append('<li>:Humidity ' + data.current.humidity + '%</li>');                                         //humidity
+    $('#weather ul').append('<li>Humidity: ' + data.current.humidity + '%</li>');                                         //humidity
     $('#weather ul').append('<li>Pressure: ' + data.current.pressure_mb + 'mb</li>');                             //pressure
 
     $('#weather ul').append('<li><h3>Wind</h3></li>');
