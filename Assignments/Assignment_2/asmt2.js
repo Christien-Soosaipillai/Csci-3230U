@@ -50,13 +50,23 @@ function downloadWeather(){
 }
 
 function downloadForcast(){
-  var APIYKey = "62a916ba22594820b02215016181903";
-  var urlForcast = "http://api.apixu.com/v1/forecast.json?q="+ lat +","+ long +"&key=" + APIYKey;
+  var APIYKey = '62a916ba22594820b02215016181903';
+  var urlForcast = 'http://api.apixu.com/v1/forecast.json?q=' + lat+ ',' + lon + '&days=7&key=' + APIYKey;
+
+  $('#forecast').append('<h2>Forecast:</h2>');
+  $('#forecast').append('<table class= "table table-striped"> <thead> <tr> <th>Date</th> <th>Condition</th> <th>High</th> <th>Low</th> <th>Wind</th> <th>Outlook</th> </tr> </thead> <tbody>');
 
   $.getJSON(urlForcast, function(data){
-
+     for(var i = 0; i < data.forecast.forecastday.length; i++) {
+       $('tbody').append('<tr> <td>'+ data.forecast.forecastday[i].date + '</td> <td><img src = ' +
+       'http:' + data.forecast.forecastday[i].day.condition.icon + '></img></td> <td>' +
+       data.forecast.forecastday[i].day.maxtemp_c + '&deg;C</td> <td>' +
+       data.forecast.forecastday[i].day.mintemp_c + '&deg;C</td> <td>'+
+       data.forecast.forecastday[i].day.avgvis_km + 'km/h</td> <td>'+
+       data.forecast.forecastday[i].day.condition.text + '</td> </tr>');
+     }
   });
-
+  $('#forecast').append('</tbody></table>');
 }
 
 function showMap() {
