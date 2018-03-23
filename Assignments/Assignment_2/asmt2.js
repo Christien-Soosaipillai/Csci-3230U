@@ -3,8 +3,8 @@ $(document).ready(function(){
   $("#weather").hide();
 
   //Getter function for grabbing long and lat input
-  //100624373
-  //EL1R3M7
+  //Christien Soosipillai - 100624373
+  //Miral Panchal - 100569725
 
   $('#goButton').click(function() {
     lat = $('#lat').val();
